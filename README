@@ -1,0 +1,18 @@
+1. Application build on Javascript frameworks angular 6 and for fronend component ionic has used latest version
+2. As mention in task its created for demo of skills 
+3. User can find the list of courses on tap user can read the details of the courses.
+4. It displays the total number of Courses found
+5. Displays the total number of Courses found
+6. User is able to sort based on Next Session Date and Length
+
+
+Running environment
+1. Download the repositorie and  do npm install on root of repositorie
+2. Install latest ionic frameworks for components
+3. do ionic serve
+
+Demo of Code link 
+
+url : 
+
+

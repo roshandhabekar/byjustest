@@ -1,14 +1,22 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header no-padding>
+
+     <ion-searchbar [(ngModel)]="searchQuery" showCancelButton animated (ionChange)="onSearchInput()"> </ion-searchbar>
+  
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+
+   <ion-list>
+    <ion-item *ngIf="searchQuery">
+      <p>Number of records {{items?.length}}</p>
+    </ion-item>
+     <ion-item *ngFor="let item of items" (click)="showCourseDetails(item);">
+       <ion-icon name="book" slot="start"></ion-icon>
+       <ion-label color="primary" >{{item['Course Name']}} <p>{{item['Next Session Date']}}</p>      <p> {{item['Parent Subject']}}</p>
+        <p> {{item['Child Subject']}}</p></ion-label>
+  
+
+     </ion-item>
+   </ion-list>
+ 
 </ion-content>

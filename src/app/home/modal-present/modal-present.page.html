@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title slot="start">{{information['Course Name']}}</ion-title>
+
+      <button ion-button slot="end" (click)="dismiss()">
+        <ion-icon  clear name="close"></ion-icon>
+      </button>
+
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <p>Provider: <span text-right>{{information['Provider']}}</span></p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <p>Parent Subject: <span text-right>{{information['Parent Subject']}}</span></p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <p>Child Subject: <span text-right>{{information['Child Subject']}}</span></p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <p> <a text-right href="{{information['Url']}}">Click Here</a></p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <p>Next Session Date: <span text-right>{{information['Next Session Date']}}</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
