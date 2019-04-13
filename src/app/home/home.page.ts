@@ -9,9 +9,9 @@ import { ModalPresentPage } from './modal-present/modal-present.page';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  private CourseListing:any;
-  private searchQuery:string;
-  private items:any;
+  public CourseListing:any;
+  public searchQuery:string;
+  public items:any;
   constructor(private courses:CourseService,public modalCtrl:ModalController){
 
   }
